@@ -9,7 +9,7 @@ Hệ thống tìm kiếm ảnh tương tự sử dụng các đặc trưng cục
 ├── features/           # Lưu trữ đặc trưng đã trích xuất (.csv)
 ├── src/               # Source code
 │   ├── preprocessing.py    # Tiền xử lý ảnh
-│   ├── feature_extraction.py  # Trích xuất đặc trưng SIFT/SURF
+│   ├── feature_extraction.py  # Trích xuất đặc trưng SIFT
 │   ├── image_matching.py     # So khớp và tìm kiếm ảnh
 │   └── utils.py             # Các hàm tiện ích
 ├── main.py            # File chạy chính
