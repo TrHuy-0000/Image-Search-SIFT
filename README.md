@@ -34,13 +34,7 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-
-### 2. GUI Desktop App (Tkinter)
-```bash
-python gui_app.py
-```
-
-### 3. Web App (Streamlit)
+### 2. Web App (Streamlit)
 ```bash
 streamlit run streamlit_app.py
 ```
@@ -48,6 +42,6 @@ streamlit run streamlit_app.py
 ## Tính năng
 1.  Thu thập và chuẩn bị dữ liệu
 2.  Tiền xử lý ảnh (Grayscale, Lọc nhiễu, CLAHE)
-3.  Trích chọn đặc trưng (SIFT/SURF)
+3.  Trích chọn đặc trưng (SIFT)
 4.  So khớp và tìm kiếm ảnh tương tự (BFMatcher/FLANN)
 5.  Đánh giá và hiển thị kết quả
