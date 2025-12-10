@@ -23,7 +23,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS tùy chỉnh
+# CSS
 st.markdown("""
     <style>
     .main {
@@ -52,7 +52,7 @@ st.markdown("---")
 DATA_DIR = "data"
 FEATURES_DIR = "features"
 
-# Tạo thư mục nếu chưa tồn tại
+# Tạo thư mục
 Path(DATA_DIR).mkdir(exist_ok=True)
 Path(FEATURES_DIR).mkdir(exist_ok=True)
 
@@ -63,8 +63,7 @@ with st.sidebar:
     # Algo selection
     algo_choice = st.radio(
         "Phương pháp trích xuất:",
-        ["SIFT", "SURF"],
-        help="SIFT: Chính xác cao, SURF: Nhanh hơn"
+        ["SIFT"]
     )
     
     # Matcher selection
@@ -77,8 +76,6 @@ with st.sidebar:
     
     # Top-N
     top_n = st.slider("Số kết quả hiển thị:", 1, 20, 5)
-    
-    st.info("Hệ thống quét 100% dữ liệu (không sampling).")
     
     st.markdown("---")
     
@@ -109,7 +106,7 @@ with col1:
     
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        # Fix warning: use_container_width -> width='stretch'
+
         st.image(image, caption="Query Image", width="stretch") 
         
         if st.button(" TÌM KIẾM"):
